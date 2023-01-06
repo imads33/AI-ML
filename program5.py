@@ -39,6 +39,8 @@ for i in range(epoch):
     d_hidden = Eh*hiddengrad
     wout += h_act.T.dot(d_output)*eta
     wh += X.T.dot(d_hidden)*eta
+
+
 print("Normalized Input:\n"+str(X))
 print("Actual Output:\n"+str(y))
 print("Predicted output:\n", output)
