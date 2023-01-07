@@ -33,8 +33,7 @@ plt.ylabel('Petal Width')
 
 # Plot the models classification
 plt.subplot(2, 2, 2)
-plt.scatter(X.Petal_Length, X.Petal_Width,
-            c=colormap[model.labels_], s=40)
+plt.scatter(X.Petal_Length, X.Petal_Width, c=colormap[model.labels_], s=40)
 plt.title('K-means Clustering')
 plt.xlabel('Petal Length')
 plt.ylabel('Petal Width')
