@@ -14,7 +14,7 @@ def aStarAlgo(start_node, stop_node):
         if n == stop_node or Graph_nodes[n] == None:
             pass
         else:
-            for (m, weight) in get_neighbors(n):  # get the neighbors of n m= A ,B, C weight = 1, 2, 13
+            for (m, weight) in get_neighbors(n):
                 if m not in open_set and m not in closed_set:  # T coz m not a source or a dest
                     open_set.add(m)
                     parents[m] = n  # s is the parent of 1) A 2)B
